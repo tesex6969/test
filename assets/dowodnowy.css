@@ -28,7 +28,6 @@ p.czas {
 }
 
 main {
-    width: 96%;
     position: relative;
     background-image: url(/assets/dowodnowybg.png);
     margin: 16px 20px 0px 20px;
@@ -38,7 +37,7 @@ main {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     background-repeat: no-repeat;
     background-size: cover;
-
+    width: 95%;
 }
 
 #lew {
@@ -55,10 +54,7 @@ main {
 mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
 }
 
-.wrapper {
-  width: 96%;        /* szerokość mniejsza niż 100% */
-  margin: 0 auto;      /* centrum strony */
-}
+
 #lew #flaga {
     width: 55%;
     margin: 0;
@@ -103,7 +99,6 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     font-size: 24%;
 }
 #bottom{
-    
     position: relative;
     height: 60px;
     background-color: #ffffff;
