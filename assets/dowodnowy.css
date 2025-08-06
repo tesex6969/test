@@ -240,7 +240,8 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
         max-width: 393px;
     }
     .all {
-        width: 98%;
+        width: 99%;
+        max-width: 390px;
     }
 }
 #danetitle{
