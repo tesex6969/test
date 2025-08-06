@@ -1,13 +1,21 @@
+/* Global box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto Medium", "Roboto", sans-serif;
     letter-spacing: 0.2px;
     width: 100%;
+    margin: 0; /* upewnij się, że body nie ma marginesów domyślnych */
+    overflow-x: hidden; /* zabezpieczenie przed poziomym scrollowaniem */
 }
-
 
 header {
     position: sticky;
-    top: -1;
+    top: 0; /* poprawka top -1 na 0 */
     left: 0;
     width: 100%;
     z-index: 9999;
@@ -30,17 +38,21 @@ p.czas {
 main {
     position: relative;
     background-image: url(/assets/dowodnowybg.png);
-    margin: 16px 20px 0px 20px;
+    margin: 16px 20px 0 20px;
     height: 385px;
     display: flex;
-    border-radius: 12px 12px 0px 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100vw; /* zabezpieczenie przed overflow */
+    overflow-x: hidden;
 }
+
 .all {
     width: 98%;
 }
+
 #lew {
     position: relative;
     margin: 20px;
@@ -48,13 +60,11 @@ main {
 }
 
 #lew img {
-
     border-radius: 16px;
     width: 100%;
--webkit-mask-image: linear-gradient(to bottom, black 98%, transparent 100%);
-mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 98%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
 }
-
 
 #lew #flaga {
     width: 55%;
@@ -75,124 +85,141 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     display: flex;
     align-items: center;
 }
-#rzecz p{
+
+#rzecz p {
     margin-left: 4px;
 }
-#praw{
+
+#praw {
     position: relative;
     margin: 20px;
     width: 65%;
 }
-#praw p:not(.sub){
+
+#praw p:not(.sub) {
     font-size: 15px;
     color: #1d1d1d;
     font-weight: 600;
 }
-#praw .sub{
+
+#praw .sub {
     font-size: 12px;
     color: #4a4a4a;
     font-weight: 500;
 }
-#praw br{
+
+#praw br {
     content: "";
     margin: 3em;
     display: block;
     font-size: 24%;
 }
-#bottom{
+
+#bottom {
     position: relative;
     height: 60px;
     background-color: #ffffff;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 12px 12px;
-    margin: 0 20px 0px 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 12px 12px;
+    margin: 0 20px 0 20px;
     padding: 20px;
     display: flex;
     align-items: center;
     color: #598527;
     font-size: 14px;
     font-weight: 600;
+    max-width: 100vw; /* zabezpieczenie przed overflow */
+    overflow-x: hidden;
 }
-#bottom p{
+
+#bottom p {
     margin-left: 20px;
 }
-.buto{
+
+.buto {
     margin: 16px 16px 0 16px;
     height: 80px;
     display: flex;
     background-color: #ffffff;
     padding: 45px 22px;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 17px;
 }
-.buto img:first-of-type:not(.buto img:last-of-type){
+
+.buto img:first-of-type:not(.buto img:last-of-type) {
     width: 20px;
     margin-right: 10px;
 }
-.buto img:last-of-type{
+
+.buto img:last-of-type {
     margin-left: auto;
     width: 40px;
 }
 
-#lo{
+#lo {
     margin-bottom: 0;
     padding: 0 20px;
     height: 60px;
 }
-.krecha{
+
+.krecha,
+.krecha2 {
     height: 0.01rem;
     width: 100%;
     background-color: #dddddd;
 }
-.krecha2{
-    height: 0.01rem;
-    width: 100%;
-    background-color: #dddddd;
+
+.krecha2 {
     margin-left: 5%;
     margin: 8px 0;
 }
-.content{
+
+.content {
     margin: 0 16px 0 16px;
-    padding: 0 20px 0px 20px;
+    padding: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 12px 12px;
-}
-.content .dana{
-    padding: 16px 0 16px 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 12px 12px;
 }
 
-.info{
+.content .dana {
+    padding: 16px 0;
+}
+
+.info {
     font-size: 14px;
-    color:  rgba(74, 74, 74, 0.99);
+    color: rgba(74, 74, 74, 0.99);
 }
 
-.main{
+.main {
     font-size: 16px;
     color: #1d1d1d;
     font-weight: 600;
 }
-#aktualizuj{
+
+#aktualizuj {
     margin: 16px 0;
     margin-left: auto;
     color: #014a93;
     font-size: 14px;
     text-align: center;
     background-color: #dbeaf9;
-    padding: 6px 16px 6px 16px;
+    padding: 6px 16px;
     border-radius: 24px;
     letter-spacing: 0.2px;
 }
-.disclaimer{
+
+.disclaimer {
     font-size: 8px;
     color: #dddddd;
     font-weight: 500;
-    margin: 16px 20px 16px 20px;
+    margin: 16px 20px;
 }
-#szaro{
+
+#szaro {
     position: absolute;
     top: 0;
     left: 0;
@@ -201,7 +228,9 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
-#wybierzdokument, #danedowodowe{
+
+#wybierzdokument,
+#danedowodowe {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -209,62 +238,72 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     width: 100%;
     z-index: 9999;
     background-color: #ffffff;
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 32px 32px 0 0;
     display: flex;
     flex-direction: column;
 }
-#wybierzdokument{
+
+#wybierzdokument {
     align-items: center;
 }
 
-#danedowodowe{
+#danedowodowe {
     align-items: left;
 }
 
-#krech{
+#krech {
     margin: 16px;
     height: 0.38rem;
     width: 35%;
     background-color: #dddddd;
     border-radius: 16px;
 }
-#wybierztitle{
+
+#wybierztitle {
     font-size: 18px;
     color: #1d1d1d;
     margin: 48px;
     font-weight: 600;
 }
+
 @media (max-width: 393px) {
-    main, #bottom {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: auto;
-        max-width: calc(100vw - 20px);
+    body {
+        overflow-x: hidden; /* zabezpieczenie */
+    }
+    header {
+        width: 100%;
+        max-width: 393px;
+        padding: 24px 10px;
     }
     .all {
-        width: 100%;
-        max-width: 100vw;
+        width: 99%;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    main {
+        margin: 16px 10px 0 10px;
+        max-width: calc(100vw - 20px);
+        overflow-x: hidden;
+    }
+    #bottom {
+        margin: 0 10px 0 10px;
+        max-width: calc(100vw - 20px);
+        overflow-x: hidden;
     }
 }
-main {
-    margin: 16px 20px 0px 20px;  /* poziome marginesy 20px */
-    width: auto; /* brak explicite width */
-}
-#bottom {
-    margin: 0 20px 0px 20px;  /* poziome marginesy 20px */
-}
 
-#danetitle{
+#danetitle {
     font-size: 18px;
     color: #1d1d1d;
     margin: 32px 48px 0 32px;
-    font-weight: 600;    
+    font-weight: 600;
 }
-.wybierzitem{
+
+.wybierzitem {
     width: 90%;
     /* height: 27%; */
     margin-bottom: 32px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -273,14 +312,16 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .wybierzitem#wi1 {
     background-image: url(/assets/warstwa_1.png);
 }
+
 .wybierzitem#wi2 {
     background-image: url(/assets/warstwa_2.png);
 }
 
-.wybierzitem button{
+.wybierzitem button {
     border-radius: 24px;
     background-color: #014a93;
     font-family: "Roboto Medium", "Roboto", sans-serif;
@@ -294,7 +335,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.zamknijprzycisk{
+.zamknijprzycisk {
     border-radius: 24px;
     background-color: white;
     border: #014a93 solid 1px;
@@ -310,7 +351,7 @@ main {
     margin: 0 auto;
 }
 
-.wrocprzycisk{
+.wrocprzycisk {
     border-radius: 24px;
     border: white solid 1px;
     background-color: white;
@@ -326,35 +367,38 @@ main {
     margin: 0 auto;
 }
 
-
-.dowo{
+.dowo {
     font-size: 24px;
     color: #1d1d1d;
     font-weight: 600;
     margin-bottom: 16px;
 }
-#wi1{
+
+#wi1 {
     background-image: url(../dowod_files/warstwa_1.png);
 }
-#wi2{
+
+#wi2 {
     background-image: url(../dowod_files/warstwa_2.png);
 }
-.ovh{
+
+.ovh {
     overflow: hidden;
 }
 
-#arrow, #rotation{
+#arrow,
+#rotation {
     padding: 8px;
 }
 
-#danebox{
+#danebox {
     margin: 16px;
     padding: 16px;
     border-radius: 16px;
     border: 1px solid #dddddd;
 }
 
-.seria{
+.seria {
     font-size: 24px;
     display: flex;
     flex-direction: row;
@@ -362,19 +406,19 @@ main {
     align-items: center;
 }
 
-#kopiuj{
+#kopiuj {
     color: #014a93;
     font-size: 14px;
     text-align: center;
     background-color: #dbeaf9;
-    padding: 6px 16px 6px 16px;
+    padding: 6px 16px;
     border-radius: 24px;
     letter-spacing: 0.2px;
     margin-right: 16px;
     margin-bottom: 16px;
 }
 
-#bottooom{
+#bottooom {
     display: flex;
     flex-direction: column;
     align-items: center;
