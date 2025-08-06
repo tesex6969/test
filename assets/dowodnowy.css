@@ -39,14 +39,15 @@ main {
     position: relative;
     background-image: url(/assets/dowodnowybg.png);
     margin: 16px 20px 0 20px;
-    height: 385px;
+    width: calc(100% - 40px);   /* szerokość ekranu minus marginesy */
+    height: 385px;              /* stała wysokość */
     display: flex;
     border-radius: 12px 12px 0 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100vw; /* zabezpieczenie przed overflow */
-    overflow-x: hidden;
+    max-width: 100vw;           /* nie szerzej niż ekran */
+    overflow: hidden;           /* TREŚĆ NIE MOŻE BYĆ PRZEWIJANA W ŚRODKU */
 }
 
 .all {
@@ -423,3 +424,4 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
