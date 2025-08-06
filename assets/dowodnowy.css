@@ -235,15 +235,25 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     font-weight: 600;
 }
 @media (max-width: 393px) {
-    header {
-        width: 100%;
-        max-width: 393px;
+    main, #bottom {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        max-width: calc(100vw - 20px);
     }
     .all {
-        width: 99%;
-        max-width: 393px;
+        width: 100%;
+        max-width: 100vw;
     }
 }
+main {
+    margin: 16px 20px 0px 20px;  /* poziome marginesy 20px */
+    width: auto; /* brak explicite width */
+}
+#bottom {
+    margin: 0 20px 0px 20px;  /* poziome marginesy 20px */
+}
+
 #danetitle{
     font-size: 18px;
     color: #1d1d1d;
@@ -369,4 +379,3 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     flex-direction: column;
     align-items: center;
 }
-
