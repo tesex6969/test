@@ -30,7 +30,7 @@ p.czas {
 main {
     position: relative;
     background-image: url(/assets/dowodnowybg.png);
-    margin: 16px 20px 0px 20px;
+    margin: 16px 25px 0px 20px;
     height: 385px;
     display: flex;
     border-radius: 12px 12px 0px 0px;
