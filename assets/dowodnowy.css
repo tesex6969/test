@@ -234,7 +234,11 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     margin: 48px;
     font-weight: 600;
 }
-
+@media (max-width: 400px) {
+    .all {
+        width: 98%;
+    }
+}
 #danetitle{
     font-size: 18px;
     color: #1d1d1d;
