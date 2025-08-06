@@ -190,7 +190,34 @@ main {
 .content .dana {
     padding: 16px 0;
 }
-
+.icons {
+    justify-content: center;  /* wyśrodkowanie poziome */
+     align-items: center; 
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 30px;
+}
+.icons img {
+    height: 30px;
+    width: auto;
+}
+.icons button {
+ background-color: #ffffff;
+    width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  overflow: hidden; /* przycina obrazek, jeśli wystaje */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons p {
+    font-size: 15px;
+}
 .info {
     font-size: 14px;
     color: rgba(74, 74, 74, 0.99);
