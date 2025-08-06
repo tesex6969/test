@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <path d="M 226.873 219.122 L 236.139 210.427 C 236.824 209.783 236.824 208.742 236.139 208.106 C 235.453 207.462 234.345 207.469 233.66 208.106 L 223.162 217.958 C 222.499 218.581 222.484 219.581 223.111 220.225 L 233.653 230.146 C 233.995 230.468 234.447 230.625 234.892 230.625 C 235.337 230.625 235.789 230.468 236.131 230.146 C 236.817 229.502 236.817 228.462 236.131 227.825 L 226.873 219.122 Z" fill="#017BFF" style="stroke-width: 1;"/>
+  <text style="fill: rgb(1, 123, 255); font-family: Arial, sans-serif; font-size: 28px; white-space: pre;" transform="matrix(0.58277, 0, 0, 0.607587, 98.073624, 85.70137)" x="241.132" y="229.683">Dokumenty</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="663.429" y="210.257">Wpisz tutaj swój tekst</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="719.173" y="162.537">Wpisz tutaj swój tekst</text>
+</svg>
