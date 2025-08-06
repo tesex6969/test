@@ -99,7 +99,7 @@ mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
     font-size: 24%;
 }
 #bottom{
-    width: 96%;
+    width: 90%;
     position: relative;
     height: 60px;
     background-color: #ffffff;
