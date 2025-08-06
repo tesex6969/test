@@ -45,10 +45,14 @@ main {
     width: 45%;
 }
 
-#lew #zdjecie {
+#lew img {
+
     border-radius: 16px;
     width: 100%;
+-webkit-mask-image: linear-gradient(to bottom, black 98%, transparent 100%);
+mask-image: linear-gradient(to bottom, black 96%, transparent 100%);
 }
+
 
 #lew #flaga {
     width: 55%;
