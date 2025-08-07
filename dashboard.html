@@ -138,7 +138,16 @@ body {
     height: 100vh;
     position: fixed;
 }
-
+#onCard {
+         position: absolute;
+            top: 10px;
+            left: 1.25em;
+            width: 25px;
+            height: 25px;
+            z-index: 10;
+            font-weight: bold;
+            color: white;
+        }
 header {
     position: sticky;
     top: 0;
@@ -238,7 +247,7 @@ header {
         .Home_cardOverlayIcon__CiSnq {
             position: absolute;
             top: 1.25em;
-            left: 1.25em;
+            right: 1.25em;
             width: 25px;
             height: 25px;
             z-index: 10;
@@ -353,71 +362,9 @@ header {
                 </div>
 
                 <div class="Home_card__E5spL" onclick="window.location.href='dowodnowy.html'">
-                    <img src="/assets/coi_common_ui_ic_document_id.svg" alt="document-icon" width="25" height="25" class="Home_cardOverlayIcon__CiSnq">
-                    <img src="/assets/CHANGE_IT_home_mid_card.svg" alt="mid" style="width: 18.5em; height: auto; border-radius: 1em;">
-                    <div class="Home_cardCover__Xmdu7">
-                        <div class="Home_coverText__rZqvF">
-                            <p style="font-size: 1em; margin: 0; font-weight: 400; font-weight: bold;">mDowód</p>
-                            <img src="/assets/ic_arrow_forward_Dgray.svg" alt="go" width="17" height="17">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="Home_header__y2QYS">
-                    <p style="font-size: 1.1em;">Usługi</p>
-                    <div class="Home_headerTools__eMxk2">
-                        <div class="Home_headerTool__SHN_p" onclick="window.location.href='services.html'">
-                            <p>Wszystkie</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="Home_serviceRow__A7Msu">
-                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
-                        <div class="Home_serviceBox__UBneT">
-                            <img src="/assets/da035_bezpiecznie_w_sieci.svg" alt="ID" width="30" height="30">
-                        </div>
-                        <p>Bezpiecznie w sieci</p>
-                    </div>
-
-                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
-                        <div class="Home_serviceBox__UBneT">
-                            <img src="/assets/auto.png" alt="ID" width="30" height="30">
-                        </div>
-                        <p>Historia<br>Pojazdu</p>
-                    </div>
-
-                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
-                        <div class="Home_serviceBox__UBneT">
-                            <img src="/assets/da008_zastrzez_pesel.svg" alt="ID" width="30" height="30">
-                        </div>
-                        <p>Zastrzeż PESEL</p>
-                    </div>
-                </div>
-
-                <div class="Home_serviceRow__A7Msu">
-                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
-                        <div class="Home_serviceBox__UBneT">
-                            <img src="/assets/da031_mbiznes.svg" alt="ID" width="30" height="30">
-                        </div>
-                        <p>Firma</p>
-                    </div>
-
-                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
-                        <div class="Home_serviceBox__UBneT">
-                            <img src="/assets/da001_punkty_karne.svg" alt="ID" width="30" height="30">
-                        </div>
-                        <p>Punkty Karne</p>
-                    </div>
-
-                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
-                        <div class="Home_serviceBox__UBneT">
-                            <img src="/assets/da025_ticket.svg" alt="ID" width="30" height="30">
-                        </div>
-                        <p>Mandaty</p>
-                    </div>
+                    <img src="/assets/Bez nazwy (10).svg" alt="document-icon" width="50" height="auto" class="Home_cardOverlayIcon__CiSnq">
+                    <img src="/assets/CHANGE_IT_home_mid_card.svg" alt="mid" style="width: 350px ; height: auto; border-radius: 1em;">
+                    <p id="onCard">mDowód</p>
                 </div>
             </div>
         </main>
