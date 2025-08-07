@@ -223,7 +223,7 @@ main {
    margin-top: 40px;
 }
 .icons {
-    margin-top: 15px ;
+
     justify-content: center;  /* wyśrodkowanie poziome */
      align-items: center; 
     display: flex;
@@ -486,5 +486,6 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 
 
