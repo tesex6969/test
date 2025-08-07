@@ -137,7 +137,9 @@ main {
 #bottom p {
     margin-left: 20px;
 }
-
+#kupa {
+    margin-top: -35px;
+}
 .buto {
     margin: 16px 16px 0 16px;
     height: 80px;
@@ -153,11 +155,12 @@ main {
     height: auto;
     display: flex;
     background-color: #ffffff;
-    padding: 45px 22px;
+    padding: 10px 22px;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 17px;
 }
+
 .buto img:first-of-type:not(.buto img:last-of-type) {
     width: 20px;
     margin-right: 10px;
@@ -220,7 +223,6 @@ main {
   letter-spacing: 0.2px;
   border: none;
   align-self: flex-start;   /* <<< to sprawi, że “podskoczy” do góry */
-   margin-top: 40px;
 }
 .icons {
     margin-top: 20px ;
