@@ -214,7 +214,7 @@ main {
     font-size: smaller;
 }
 #copy {
-  
+  font-weight: bold;
   margin-left: auto;
   color: #014a93;
   font-size: 14px;
