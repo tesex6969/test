@@ -140,6 +140,16 @@ main {
 
 .buto {
     margin: 16px 16px 0 16px;
+    height: 80px;
+    display: flex;
+    background-color: #ffffff;
+    padding: 45px 22px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 17px;
+}
+.butow {
+    margin: 16px 16px 0 16px;
     height: auto;
     display: flex;
     background-color: #ffffff;
@@ -148,7 +158,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 17px;
 }
-
 .buto img:first-of-type:not(.buto img:last-of-type) {
     width: 20px;
     margin-right: 10px;
@@ -214,6 +223,7 @@ main {
    margin-top: 40px;
 }
 .icons {
+    margin-top: 20px;
     justify-content: center;  /* wyśrodkowanie poziome */
      align-items: center; 
     display: flex;
