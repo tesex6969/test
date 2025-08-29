@@ -100,15 +100,12 @@ mask-image: linear-gradient(to bottom, rgba(255,255,255,1) 93%, rgba(255,255,255
 }
 
 #praw p:not(.sub) {
-    
     font-size: 15px;
     color: #1d1d1d;
     font-weight: 600;
 }
 
 #praw .sub {
-    margin-top: -5px;
-    margin-bottom: -5px;
     font-size: 12px;
     color: #4a4a4a;
     font-weight: 500;
